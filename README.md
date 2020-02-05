@@ -1,5 +1,6 @@
-# Final Project
-Final Project slides: https://docs.google.com/presentation/d/1DGN9YsIl6lLFxN97tFLm5QK1oNESXSJxx_sIAVSHq74
+# learnBTC
+## Vision Statement
+The goal of learnBTC is to provide a better qualitative method of analyzing bitcoin price trends to social activity on Twitter. The purpose of learnBTC is as an independent analysis tool for understanding the relationship between bitcoin price and Twitter activity. Twitter activity was selected to understand the true scope and impact of Bitcoin on the general population. This Twitter activity represents a sampled portion of the population in order to see how relevant, prevalent, and active BTC actually is to the entire population. Thus, we will be able to meaningfully investigate the relationship between Twitter activity and bitcoin price fluctuations.
 
 ## Overview
 The application currently:
@@ -28,9 +29,6 @@ Things that need to be fixed but no one has time for:
 
 Note: TableView = TwitterDataTableViewController, GraphView = PriceGraphViewController (no relation to prior classes used in GraphADT/GraphViz/Social Networks/other labs)
 
-## Vision Statement
-The goal of learnBTC is to provide a better qualitative method of analyzing bitcoin price trends to social activity on Twitter. The purpose of learnBTC is as an independent analysis tool for understanding the relationship between bitcoin price and Twitter activity. Twitter activity was selected to understand the true scope and impact of Bitcoin on the general population. This Twitter activity represents a sampled portion of the population in order to see how relevant, prevalent, and active BTC actually is to the entire population. Thus, we will be able to meaningfully investigate the relationship between Twitter activity and bitcoin price fluctuations.
-
 ## Feature List
 ### Bitcoin Price Graph
 * Display graph of BTC price over a domain of dates and a codomain of BTC price. 
@@ -40,11 +38,13 @@ The goal of learnBTC is to provide a better qualitative method of analyzing bitc
   * Tap gesture or releasing drag gesture will select a specific point within the graph
   * Inputable and labelled textboxes for start and end date to change the range of dates
   * Swipe right gesture to segue to Twitter Data Analytics View
+
 ### Twitter Data Analytics View
 * See basic statistics (frequency, total volume of tweets, most frequent words, most mentioned users, most used hashtags) for a specific date.
   * Parse and store Twitter data from .json files
   * Connect to Twitter API through UtterKit
   * Users will be able to select a point on the graph, and then segue (via a right swipe) to a new Table View with the aforementioned statistics.
+  
 ### Tentative Features pending Time/Resources
 * Create more complex statistics for analyzing Twitter data: 
   * Example - display a graph-edge representation of users mentions and interactions (such as replies, retweets, likes) for a specific date
@@ -53,8 +53,6 @@ The goal of learnBTC is to provide a better qualitative method of analyzing bitc
   * Need to fix initalization and utilization of UtterKit
 * More interactive components that give further access and describe Twitter data: allow user to tap on specific tweets and bring up subviews with more information, be able to access users' profile pictures, etc
 * Grab articles and news pieces from online news outlets and display them next to a specific date or time when the user zooms in on a specific section
-
-## UI Sketches
 
 ## Key Use Cases
 * Graph Navigation
@@ -103,7 +101,7 @@ As a public and free BTC price API has not been discovered yet to do GET request
 
 ### Main Architecture
 #### learnBTC
-Currently, there are three major components that need to be built:
+Currently, there are three major components that have been built:
 - Twitter Interpreter that translates .json files containing historic Twitter data and 
 converting it into its internal abstract representation. 
 - GraphViewController that displays a line graph detailing the changes to bitcoin (BTC)

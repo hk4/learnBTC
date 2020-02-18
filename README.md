@@ -6,7 +6,7 @@ The goal of learnBTC is to provide a better qualitative method of analyzing bitc
 The application supports two main views: Bitcoin price view and Twitter data view. Application grabs live Twitter data based on specified time periods, which is displayed on the Twitter data view. 
 
 <p align="center">
-  <img width="400" height="300" src="https://i.imgur.com/E0Ho2gq.png">
+  <img height="300" src="https://i.imgur.com/E0Ho2gq.png">
 </p>
 
 ## Feature List
